@@ -1,4 +1,5 @@
-# MQTT Pi Installer
+# DE: Automatisiertes MQTT-Installationsskript für Raspberry Pi mit Home Assistant Integration
+# EN: Automated MQTT installation script for Raspberry Pi with Home Assistant integration
 
 Ein Installationsskript für Raspberry Pi, das MQTT verwendet, um das Gerät vollständig in Home Assistant einzubinden und fernzusteuern.
 
