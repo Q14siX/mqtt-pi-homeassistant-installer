@@ -47,7 +47,7 @@ An installation script for Raspberry Pi that uses MQTT to fully integrate the de
 
 ```bash
 wget https://raw.githubusercontent.com/Q14siX/mqtt-pi-homeassistant-installer/main/mqtt_pi_installer.sh
-chmod +x mqtt_pi_installer.sh
+sudo chmod +x mqtt_pi_installer.sh
 sudo ./mqtt_pi_installer.sh
 ```
 
