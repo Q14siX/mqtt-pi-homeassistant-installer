@@ -19,6 +19,8 @@ fi
 
 USER_HOME=$(eval echo ~${SUDO_USER})
 BIN_DIR="$USER_HOME/.local/bin"
+PI_USER=$(logname)
+LINE="$PI_USER ALL=(ALL) NOPASSWD: /sbin/shutdown, /sbin/reboot, /usr/bin/apt, /usr/bin/apt-get"
 
 # Stop and disable systemd service
 systemctl stop mqtt-listener.service 2>/dev/null
@@ -28,6 +30,9 @@ rm -f /etc/systemd/system/mqtt-listener.service
 # Remove binaries
 rm -f "$BIN_DIR/mqtt_listener.sh"
 rm -f "$BIN_DIR/mqtt_register_buttons.sh"
+
+# Remove Authorization
+sed -i "\|^$LINE\$|d" /etc/sudoers
 
 # Reload systemd daemon
 systemctl daemon-reload
