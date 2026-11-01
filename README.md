@@ -1,6 +1,8 @@
 # DE: Automatisiertes MQTT-Installationsskript für Raspberry Pi mit Home Assistant Integration
 # EN: Automated MQTT installation script for Raspberry Pi with Home Assistant integration
 
+<a href="https://buymeacoffee.com/q14six"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" width="200"></a>
+
 Ein Installationsskript für Raspberry Pi, das MQTT verwendet, um das Gerät vollständig in Home Assistant einzubinden und fernzusteuern.
 
 An installation script for Raspberry Pi that uses MQTT to fully integrate the device into Home Assistant and enable remote control.
